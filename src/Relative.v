@@ -228,7 +228,7 @@ Module Renamings (T : Term).
   Proof. simpl_term_eq. Qed.
 
   Lemma rw_apply_comp r s {V} (t : @term V) :
-    [r] [s] t = [r;s] t.
+    [r] [s] t = [r;;s] t.
   Proof. simpl_term_eq. Qed.
 
   Hint Rewrite @rw_apply_id @rw_apply_comp : rw_renaming.
